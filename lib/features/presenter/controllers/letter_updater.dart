@@ -108,20 +108,22 @@ class letterUpdater extends ChangeNotifier {
   }
 
   void enterWord() {
-    String word =
-        '$newFirstLetter$newSecondLetter$newThirdLetter$newFourthLetter$newFifthLetter';
-    print('$word');
+    if (newFifthLetter != '') {
+      String word =
+          '$newFirstLetter$newSecondLetter$newThirdLetter$newFourthLetter$newFifthLetter';
+      print('$word');
 
-    savingword();
-    counter++;
-    print('$counter');
-    print('$letterMemory11');
-    newFirstLetter = '';
-    newSecondLetter = '';
-    newThirdLetter = '';
-    newFourthLetter = '';
-    newFifthLetter = '';
-    notifyListeners();
+      savingword();
+      counter++;
+      print('$counter');
+      print('$letterMemory11');
+      newFirstLetter = '';
+      newSecondLetter = '';
+      newThirdLetter = '';
+      newFourthLetter = '';
+      newFifthLetter = '';
+      notifyListeners();
+    }
   }
 
   void savingword() {

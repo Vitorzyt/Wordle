@@ -78,7 +78,24 @@ class enter_keybord_container extends StatelessWidget {
       padding: const EdgeInsets.all(2.0),
       child: GestureDetector(
         onTap: (() {
-          context.read<letterUpdater>().enterWord();
+          if (Provider.of<letterUpdater>(context, listen: false)
+                  .newFourthLetter ==
+              '') {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                elevation: 300,
+                backgroundColor: Colors.black,
+                content: const Text(
+                  'Not Enought Letters',
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold),
+                ),
+                duration: const Duration(seconds: 2),
+              ),
+            );
+          } else {
+            context.read<letterUpdater>().enterWord();
+          }
         }),
         child: Container(
           height: 50,
