@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
-import 'package:flutter/services.dart';
+
 import 'package:wordle/features/presenter/widgets/keyboard_container.dart';
 
+import '../controllers/letter_updater.dart';
 import '../widgets/constants/aligment_constants.dart';
 import '../widgets/wordle_container.dart';
 
@@ -15,15 +15,13 @@ class _MainScreenState extends State<MainScreen> {
   @override
   void initState() {
     super.initState();
-
-    setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
     // double height = MediaQuery.of(context).size.height;
     //  double width = MediaQuery.of(context).size.width;
-
+    // Provider.of<wordChooser>(context, listen: false).ramdomWord();
     return Scaffold(
       resizeToAvoidBottomInset: true,
       appBar: AppBar(

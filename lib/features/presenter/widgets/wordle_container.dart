@@ -13,9 +13,10 @@ class wordle_container extends StatelessWidget {
         height: 60,
         width: 60,
         decoration: BoxDecoration(
+            color: Colors.white,
             border: Border.all(
-          color: Color.fromARGB(255, 194, 194, 194),
-        )),
+              color: Color.fromARGB(255, 194, 194, 194),
+            )),
         child: Center(
           child: rowActivator == Provider.of<letterUpdater>(context).counter
               ? Text(
@@ -46,9 +47,23 @@ class wordle_container1 extends StatelessWidget {
         height: 60,
         width: 60,
         decoration: BoxDecoration(
+            color: rowActivator == (0)
+                ? Provider.of<letterUpdater>(context).color11
+                : rowActivator == (1)
+                    ? Provider.of<letterUpdater>(context).color12
+                    : rowActivator == (2)
+                        ? Provider.of<letterUpdater>(context).color13
+                        : rowActivator == (3)
+                            ? Provider.of<letterUpdater>(context).color14
+                            : rowActivator == (4)
+                                ? Provider.of<letterUpdater>(context).color15
+                                : rowActivator == (5)
+                                    ? Provider.of<letterUpdater>(context)
+                                        .color16
+                                    : Colors.white,
             border: Border.all(
-          color: Color.fromARGB(255, 194, 194, 194),
-        )),
+              color: Color.fromARGB(255, 194, 194, 194),
+            )),
         child: Center(
           child: rowActivator == Provider.of<letterUpdater>(context).counter
               ? Text(
@@ -136,9 +151,23 @@ class wordle_container2 extends StatelessWidget {
         height: 60,
         width: 60,
         decoration: BoxDecoration(
+            color: rowActivator == (0)
+                ? Provider.of<letterUpdater>(context).color21
+                : rowActivator == (1)
+                    ? Provider.of<letterUpdater>(context).color22
+                    : rowActivator == (2)
+                        ? Provider.of<letterUpdater>(context).color23
+                        : rowActivator == (3)
+                            ? Provider.of<letterUpdater>(context).color24
+                            : rowActivator == (4)
+                                ? Provider.of<letterUpdater>(context).color25
+                                : rowActivator == (5)
+                                    ? Provider.of<letterUpdater>(context)
+                                        .color26
+                                    : Colors.white,
             border: Border.all(
-          color: Color.fromARGB(255, 194, 194, 194),
-        )),
+              color: Color.fromARGB(255, 194, 194, 194),
+            )),
         child: Center(
           child: rowActivator == Provider.of<letterUpdater>(context).counter
               ? Text(
@@ -226,9 +255,23 @@ class wordle_container3 extends StatelessWidget {
         height: 60,
         width: 60,
         decoration: BoxDecoration(
+            color: rowActivator == (0)
+                ? Provider.of<letterUpdater>(context).color31
+                : rowActivator == (1)
+                    ? Provider.of<letterUpdater>(context).color32
+                    : rowActivator == (2)
+                        ? Provider.of<letterUpdater>(context).color33
+                        : rowActivator == (3)
+                            ? Provider.of<letterUpdater>(context).color34
+                            : rowActivator == (4)
+                                ? Provider.of<letterUpdater>(context).color35
+                                : rowActivator == (5)
+                                    ? Provider.of<letterUpdater>(context)
+                                        .color36
+                                    : Colors.white,
             border: Border.all(
-          color: Color.fromARGB(255, 194, 194, 194),
-        )),
+              color: Color.fromARGB(255, 194, 194, 194),
+            )),
         child: Center(
           child: rowActivator == Provider.of<letterUpdater>(context).counter
               ? Text(
@@ -316,9 +359,23 @@ class wordle_container4 extends StatelessWidget {
         height: 60,
         width: 60,
         decoration: BoxDecoration(
+            color: rowActivator == (0)
+                ? Provider.of<letterUpdater>(context).color41
+                : rowActivator == (1)
+                    ? Provider.of<letterUpdater>(context).color42
+                    : rowActivator == (2)
+                        ? Provider.of<letterUpdater>(context).color43
+                        : rowActivator == (3)
+                            ? Provider.of<letterUpdater>(context).color44
+                            : rowActivator == (4)
+                                ? Provider.of<letterUpdater>(context).color45
+                                : rowActivator == (5)
+                                    ? Provider.of<letterUpdater>(context)
+                                        .color26
+                                    : Colors.white,
             border: Border.all(
-          color: Color.fromARGB(255, 194, 194, 194),
-        )),
+              color: Color.fromARGB(255, 194, 194, 194),
+            )),
         child: Center(
           child: rowActivator == Provider.of<letterUpdater>(context).counter
               ? Text(
@@ -406,9 +463,23 @@ class wordle_container5 extends StatelessWidget {
         height: 60,
         width: 60,
         decoration: BoxDecoration(
+            color: rowActivator == (0)
+                ? Provider.of<letterUpdater>(context).color51
+                : rowActivator == (1)
+                    ? Provider.of<letterUpdater>(context).color52
+                    : rowActivator == (2)
+                        ? Provider.of<letterUpdater>(context).color53
+                        : rowActivator == (3)
+                            ? Provider.of<letterUpdater>(context).color54
+                            : rowActivator == (4)
+                                ? Provider.of<letterUpdater>(context).color55
+                                : rowActivator == (5)
+                                    ? Provider.of<letterUpdater>(context)
+                                        .color56
+                                    : Colors.white,
             border: Border.all(
-          color: Color.fromARGB(255, 194, 194, 194),
-        )),
+              color: Color.fromARGB(255, 194, 194, 194),
+            )),
         child: Center(
           child: rowActivator == Provider.of<letterUpdater>(context).counter
               ? Text(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:wordle/features/data/repositories/dictionary_list.dart';
 import 'package:wordle/features/presenter/controllers/letter_updater.dart';
+import 'package:wordle/features/presenter/widgets/showdialog.dart';
 
 class keybord_container extends StatelessWidget {
   keybord_container(this.letter);
@@ -95,6 +96,8 @@ class enter_keybord_container extends StatelessWidget {
             );
           } else {
             context.read<letterUpdater>().enterWord();
+            if (context.read<letterUpdater>().finishCheck() == true)
+              showDialog(context: context, builder: (_) => FinishingDialog());
           }
         }),
         child: Container(
